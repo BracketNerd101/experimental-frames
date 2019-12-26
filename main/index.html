@@ -17,15 +17,45 @@
   <title>Hack The Planet</title>
 </head>
 <body>
-    <div class="off-canvas off-canvas--full-width off-canvas--navigation js-off-canvas js-off-canvas--nav">
+
+    <header class="header js-header ">
+        <div class="header__container container max-width-lg">
+          <div class="header__logo">
+            <a href="#0">
+              <svg width="130" height="32" viewBox="0 0 130 32"><title>Go to homepage</title><circle fill="var(--color-primary)" cx="16" cy="16" r="16"/><rect fill="var(--color-contrast-higher)" x="41" y="11" width="89" height="10"/></svg>
+            </a>
+          </div>
+      
+          <button class="btn btn--subtle header__trigger js-header__trigger js-tab-focus" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+      
+          <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+            <div class="header__nav-inner">
+              <div class="header__label">Main menu</div>
+              <ul class="header__list">
+                <li class="header__item"><a href="#0" class="header__link">About</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Solutions</a></li>
+                <li class="header__item"><a href="#0" class="header__link" aria-current="page">Resources</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Pricing</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Contact</a></li>
+                <li class="header__item header__item--divider" aria-hidden="true"></li>
+                <li class="header__item"><a href="#0" class="btn btn--primary">Download</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <!-- <div class="off-canvas off-canvas--full-width off-canvas--navigation js-off-canvas js-off-canvas--nav">
         <button class="reset anim-menu-btn offnav-control js-anim-menu-btn js-tab-focus" aria-label="Toggle navigation" aria-controls="offcanvas-panel-1">
           <svg class="offnav-control__bg" aria-hidden="true" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke-miterlimit="10" /></svg>
           <i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right" aria-hidden="true"></i>
         </button>
         
-        <main class="off-canvas__main">
+        <main class="off-canvas__main"> -->
           <!-- insert your main content here -->
-          <div class="container max-width-sm height-100%">
+          <!-- <div class="container max-width-sm height-100%">
             <div class="flex flex-center height-100%">
               <div class="text-component text-center">
                 <h1>Off-Canvas Navigation</h1>
@@ -64,7 +94,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     <section class="hero hero--full-screen" style="background-image: url('img/mount.jpg')">
       <div class="container max-width-adaptive-sm">
@@ -80,6 +110,6 @@
     </section>
 
 <script src="assets/js/scripts.js"></script>
-<script src="assets/js/components/off-canvas-nav.js"></script>
+<!-- <script src="assets/js/components/off-canvas-nav.js"></script> -->
 </body>
 </html>
